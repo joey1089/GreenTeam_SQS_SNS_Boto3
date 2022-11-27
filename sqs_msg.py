@@ -13,3 +13,6 @@ def create_sqs_queue(): #create a sqs queue and return the response
     return response
 
 print(create_sqs_queue())
+
+#In case if you want to delete the queue 
+# refer https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_queue

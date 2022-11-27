@@ -26,3 +26,8 @@ SECONDS_2_DELAY = "0"
 TIMEOUT_4_QUE_VISIBLITY = "45"
 output = create_queue(OUR_QUEUE_NAME, SECONDS_2_DELAY, TIMEOUT_4_QUE_VISIBLITY)
 print(f'Std Msg Queue Name : {OUR_QUEUE_NAME} created. Queue URL - {output.url}')
+
+
+#output
+#$ Std Msg Queue Name : Project-Week-15-Standard-Msg-QueueTest created. 
+#$ Queue URL - https://sqs.us-east-1.amazonaws.com/883139989797/Project-Week-15-Standard-Msg-QueueTest
