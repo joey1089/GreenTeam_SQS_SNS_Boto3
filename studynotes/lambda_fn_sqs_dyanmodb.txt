@@ -1,3 +1,4 @@
+#Notes for learning and improving code
 import boto3
 import json
 import datetime
