@@ -1,4 +1,4 @@
-#Here we use Boto3 to send sqs messages
+#Here we use Boto3's module method create_queue to create sqs messages
 import boto3
 
 
