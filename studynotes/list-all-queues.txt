@@ -1,0 +1,23 @@
+# To list all the sqs queue 
+import boto3
+
+sqs_obj = boto3.resource("sqs") # use Boto3 resource to return dictionary, so we can iterate through it.
+
+def list_queues():
+    """
+    Creates an iterable of all Queue resources in the collection.
+    """
+    try:
+        sqs_queues_list = []
+        for queue in sqs_obj.queues.all():
+            sqs_queues_list.append(queue)
+    except:
+        print("Found Out : Not able to list queues !")
+        
+    return sqs_queues_list
+
+
+
+list_sqs_queues = list_queues()
+for que in list_sqs_queues:
+    print(f'Queue URL - {queue.url}')
